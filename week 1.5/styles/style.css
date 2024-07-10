@@ -1,0 +1,72 @@
+/* The * selects everything and acts as a global reset to ensure consistency across browsers */
+* {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    color: lightgray;
+}
+
+/* Sets the overall background and ensures the content fits the screen height */
+html{
+    background-color: rgb(75, 75, 75); 
+}
+
+html, body {
+    height: 100vh; 
+    padding: 1rem; 
+}
+
+/* Defines the page layout using a grid */
+body {
+    display: grid; 
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"; 
+    grid-template-rows: auto 1fr auto; /* Adjusted to reflect the simplified structure */
+}
+
+main {
+    display: grid; 
+    grid-template-areas:
+        "portfolio map"; 
+    grid-template-columns: 1fr 1fr; 
+}
+
+/* Assigns each major section to a part of the grid */
+header { 
+    grid-area: header; 
+}
+
+main { 
+    grid-area: main; 
+}
+
+.portfolio {
+    grid-area: portfolio; 
+    background-color: rgba(255, 54, 54, 0.669);
+    display: inline-grid;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#map { 
+    grid-area: map; 
+    height: 100vh; 
+}
+
+#footer {
+    grid-area: footer;
+    padding: 1rem;
+    background-color: #191f35; /* Sets a darker background for contrast */
+    color: #fff; /* Ensures text is readable against the dark background */
+    text-align: center; /* Centers the footer content */
+}
+
+.awesomePopup {
+    background-color: #f8f9fa;
+    color: #212529;
+    font-size: 16px;
+    padding: 10px;
+}

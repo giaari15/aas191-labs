@@ -1,0 +1,58 @@
+/* The * selects everything and acts as a global reset to ensure consistency across browsers */
+* {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    color: lightgray;
+}
+
+/* Sets the overall background and ensures the content fits the screen height */
+html{
+    background-color: rgb(75, 75, 75); 
+}
+
+html, body {
+    height: 100vh; 
+    padding: 1rem; 
+}
+
+/* Defines the page layout using a grid */
+body {
+    display: grid; 
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"; 
+    grid-template-rows: auto 1fr auto; /* Adjusted to reflect the simplified structure */
+}
+
+main {
+    display: grid; 
+    grid-template-areas:
+        "portfolio map"; 
+    grid-template-columns: 1fr 1fr; 
+}
+
+/* Assigns each major section to a part of the grid */
+header { 
+    grid-area: header; 
+}
+
+main { 
+    grid-area: main; 
+}
+
+.portfolio {
+    grid-area: portfolio; 
+    background-color: rgba(255, 54, 54, 0.669);
+}
+
+#map { 
+    grid-area: map; 
+    height: 100vh; 
+}
+
+footer { 
+    grid-area: footer; 
+}

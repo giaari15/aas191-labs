@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab #1 Hello World with MapLibreGL</title>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="#">
+        <!-- I'd add some style if here if I had any -->
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css">
+        <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Lab #1: Hello World!</h1>
+            <h3>Map of Westwood + places I am familiar with</h3>
+        </header>
+
+        <main>
+            <!-- hint: majority of your lab assignment can go here -->
+            <div class="portfolio">
+                <!-- Portfolio content goes here -->
+                <div id="contents"></div>
+                
+                <div id="otherContents">
+                    <img src="CA79F9A6-9663-49EE-BD14-E68691970299_1_105_c.jpeg">
+                </div> 
+
+                <div id="selfie">
+                    <img src="AB1BAD1E-DDAD-4402-90B5-B66AA56B1A26_1_105_c.jpeg">
+                </div>
+
+                <div class="box-a">
+                    <p>My name is Gia. I am a rising 3rd year Statistics and Data Science and Asian American Studies double major with a Digital Humanities Minor. 
+                        I love fashion and film. My favorite designer is Yohji Yamamoto. My favorite director is either Hideaki Anno or Wong Kar Wai, but my favorite movie is Suspiria (1977). 
+                        My goals as a critical digital map maker are to provide a congregated space for marginalized voices throughout the LA area and to heed way for spatial justice. 
+                        As gentrification and encampment sweepings continue, I hope to be able to provide further insight of the humanness of those directly impacted, and the ways in which we continue to resist.
+                        People are not statistics. Laws, politicians, and the wealthy cannot define the people as unworthy of our human rights. Community prevails!
+                    </p>
+                </div>
+                
+                <div class="box-b">
+                    <h3>
+                        To-Do List 6/26
+                    </h3>
+                    <ol
+                    style="padding-left: 1rem;">
+                        <li>Go to class</li>
+                        <li>Work on lab</li>
+                        <li>Finish lab</li>
+                    </ol>
+                </div>
+                
+                <div class="box-c">
+                    <h3>
+                        References for Lab #1
+                    </h3>
+                    <ul
+                    style="padding-left: 1rem;">
+                        <li><a href="https://www.altcademy.com/blog/how-to-position-an-image-in-html/">Positioning</a></li>
+                        <li><a href="https://www.latlong.net/">Coordinates</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="map">
+                <!-- Map will be inserted here -->
+            </div>
+        </main>
+        
+        <div id="footer">
+            Copyright(2024)
+        </div>
+
+    </body>
+    <script src="js/init.js"></script>
+</html>
