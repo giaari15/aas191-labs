@@ -93,7 +93,7 @@ main {
 }
 
 #contents {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     gap: 10px;

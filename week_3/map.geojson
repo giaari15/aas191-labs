@@ -1,0 +1,90 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Dickson Court N",
+          "message": "People's University first location"
+        },
+        "geometry": {
+          "coordinates": [
+            -118.44043239607912,
+            34.072652781483754
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Royce Hall",
+          "message": "1st encampment location"
+        },
+        "geometry": {
+          "coordinates": [
+            -118.44236644525043,
+            34.07225661088103
+          ],
+          "type": "Point"
+        },
+        "id": 1
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Dodd Hall",
+          "message": "liberated zone and occupation multiple occasions"
+        },
+        "geometry": {
+          "coordinates": [
+            -118.43928400235365,
+            34.072799716032435
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Court of Sciences",
+          "message": "Second location for People's University"
+        },
+        "geometry": {
+          "coordinates": [
+            -118.44222692845862,
+            34.06867697223511
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Kerkhoff",
+          "message": "2nd encampment location"
+        },
+        "geometry": {
+          "coordinates": [
+            -118.4430896805041,
+            34.07039637911579
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Lu Valle Commons",
+          "message": "3rd encampment location"
+        },
+        "geometry": {
+          "coordinates": [
+            -118.438892954365,
+            34.07311573078823
+          ],
+          "type": "Point"
+        }
+      }
+    ]
+  }
