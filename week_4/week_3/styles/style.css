@@ -1,0 +1,147 @@
+/* The * selects everything and acts as a global reset to ensure consistency across browsers */
+* {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    color: lightgray;
+}
+
+/* Sets the overall background and ensures the content fits the screen height */
+html{
+    background-image: url("centipede.png");
+    background-size: 900px 1500px;
+    background-color: #212529;
+}
+
+html, body {
+    height: 100vh; 
+    padding: 1rem; 
+    gap: 10px;
+}
+
+/* Defines the page layout using a grid */
+body {
+    display: grid; 
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"; 
+    grid-template-rows: auto 1fr auto; /* Adjusted to reflect the simplified structure */
+}
+
+main {
+    display: grid; 
+    grid-template-areas:
+        "portfolio map"; 
+    grid-template-columns: 1fr 1fr; 
+}
+
+/* Assigns each major section to a part of the grid */
+header { 
+    grid-area: header;
+}
+
+main { 
+    grid-area: main;
+    gap: 10px;
+}
+
+.portfolio {
+    grid-area: portfolio; 
+    background-color: rgba(143, 0, 0, 0.291);
+    display: grid;
+    grid-template-areas: "button button"
+                         "leftImg rightImg"
+                         "text1 text1"
+                         "list1 list2";
+    grid-template-columns: 1fr 1fr;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    border-style: double;
+    border-width: 0.5rem;
+}
+
+.portfolio img{
+    width: 100%;
+    height: 75%;
+}
+
+#map { 
+    grid-area: map; 
+    height: 150vh;
+    background-color: rgba(143, 0, 0, 0.291);
+    border-style: double;
+    border-width: 0.5rem;
+}
+
+#footer {
+    grid-area: footer;
+    padding: 1rem;
+    background-color: lightgray; /* Sets a darker background for contrast */
+    color: #212529; /* Ensures text is readable against the dark background */
+    text-align: center; /* Centers the footer content */
+}
+
+#popupTitle {
+    color: rgb(254, 215, 19);
+    text-align: center;
+}
+
+#popupBody {
+    color: darkgray;
+}
+
+#contents {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    grid-area: button;
+}
+
+#contents button {
+    background-color: rgba(255, 241, 241, 0.721);
+    color: #212529;
+    font-weight: bold;
+    border-color: lightgray;
+    padding-block: 0.25rem;
+    padding-inline: 0.25rem;
+}
+
+#otherContents {
+    grid-area: leftImg;
+    position: relative;
+}
+
+#otherContents button {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
+}
+
+#otherContents button:hover {
+    background-color: rgb(31, 31, 31);
+    color: lightgray;
+}
+
+#selfie {
+    grid-area: rightImg;
+}
+
+.box-a {
+    grid-area: text1;
+}
+
+.box-b {
+    grid-area: list1;
+}
+
+.box-c {
+    grid-area: list2;
+}
